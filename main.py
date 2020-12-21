@@ -25,10 +25,10 @@ def start_timer():
         count_down(LONG_BREAK * 60)
     elif reps % 2 == 0:
         title_label.config(text="BREAK")
-        count_down(BREAK_MIN)
+        count_down(BREAK_MIN * 60)
     else:
         title_label.config(text="WORK")
-        count_down(WORK_MIN)
+        count_down(WORK_MIN * 60)
 
 
 # -------------------------- Countdown Mechanism -----------------------------------------
